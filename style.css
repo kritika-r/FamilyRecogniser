@@ -1,0 +1,27 @@
+body{
+    background-position: center;
+    background-size: cover;
+    background-image:url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg")
+}
+h1{
+    font-weight: bold;
+    font-style: unset;
+   
+}
+button{
+    width: 100px;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    border-style: none;
+    height: 35px;
+}
+.note{
+    background-clip: border-box;
+    background-color: honeydew;
+    width: 450px;
+    border-radius:7px ;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+}

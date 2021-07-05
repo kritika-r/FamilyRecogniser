@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Family Face Recogniser</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+   <link rel="stylesheet"  href="style.css">
+   
+</head>
+    <body>
+   <center>
+       <h1>Family Face Recogniser</h1>
+       <br>
+       <div class="note">
+           <h4>This app can recognise the following people-</h4>
+           <br>
+           <p>Mother</p>
+           <p>Father</p>
+           <p>Brother</p>
+           <p>Sister</p>
+           
+           
+       </div>
+       <br>
+     <label>Webcam View</label>
+     <div class="cam"></div>
+     <br>
+     <button class="btn-dark" onclick="clickSnapshot();">Click Photo</button>
+     <br>
+     <br>
+     <button class="btn-dark" onclick="identifySnapshot();">Recognise</button>
+     <br>
+     <br>
+     <br>
+     <h5 style="font-size: 20px; font-weight: bold;color: black;"> Recognition Results</h5>
+     <p>Object: </p>
+     <p>Accuracy: </p>
+   </center>
+    </body>
+</html>
