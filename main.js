@@ -13,4 +13,22 @@ function clickSnapshot(){
 
    });
 }
-var classifier=ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/v_sl95BzE/model.json",modelLoaded);
+ classifier=ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/Bh-eaOKNZ/model.json',modelLoaded);
+
+function modelLoaded(){
+    console.log("Model has loaded!")
+}
+function identifySnapshot(){
+    img= document.getElementById("captured_image");
+    classifier.classify(img, gotResults);
+}
+function gotResults(error,results){
+    if(error){
+        console.error("An error has occured.",error);
+    }
+    else{
+        console.log(results);
+        document.getElementById("object_name").innerHTML= results[0].label;
+        document.getElementById("object_accuracy").innerHTML= results[0].confidence.toFixed(3);
+    }
+}
